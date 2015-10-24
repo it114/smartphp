@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * 缂撳瓨椹卞姩鎺ュ彛
+ */
+
+namespace framework\base\cache;
+
+Interface CacheInterface {
+
+    /**
+     * 璁剧疆缂撳瓨
+     * @param string  $key    缂撳瓨鍚�     * @param mixed   $value  缂撳瓨鍐呭
+     * @param integer $expire 缂撳瓨鏃堕棿
+     */
+    public function set($key, $value, $expire = 1800);
+	
+	/**
+	 * 閫掑缂撳瓨鍊�	 * @param  string  $key   缂撳瓨鍚�	 * @param  integer $value 閫掑鏁伴噺
+	 * @return boolean
+	 */
+	public function des($key, $value = 1);
+	
+	/**
+	 * 鍒犻櫎缂撳瓨
+	 * @param  string $key 缂撳瓨鍚�	 * @return boolean
+	 */
+	public function del($key);
+
+	/**
+	 * 娓呯┖缂撳瓨
+	 * @return void
+	 */
+    public function clear();
+		
+}

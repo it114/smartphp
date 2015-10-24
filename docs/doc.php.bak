@@ -1,0 +1,8 @@
+<?php
+//接口设计规范：https://github.com/Dreampie/http-api-design-ZH_CN
+//
+//如何处理版本号问题：
+///http://ningandjiao.iteye.com/blog/1990004
+//http://stackoverflow.com/questions/2024600/rest-api-versioning-only-version-the-representation-not-the-resource-itself?lq=1
+//http://stackoverflow.com/questions/10742594/versioning-rest-api?lq=1
+//本期先把version放在url中，并且是查询构造参数中，不走rest格式
